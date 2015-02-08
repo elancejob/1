@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="animation">
+        <item>null</item>
+        <item>CardPageTransformer</item>
+        <item>CardTransformer(1f)</item>
+        <item>CardTransformer(0.5f)</item>
+        <item>CardTransformer(0f)</item>
+        <item>RotationTransformer</item>
+        <item>DepthPageTransformer</item>
+        <item>ZoomOutPageTransformer</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+    </string-array>
+
+</resources>

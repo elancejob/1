@@ -10,8 +10,15 @@ import android.view.MenuItem;
 
 import com.testanimation.pageanimation.animation.CardPageTransformer;
 import com.testanimation.pageanimation.animation.CardTransformer;
+import com.testanimation.pageanimation.animation.CirclePageTransformer;
+import com.testanimation.pageanimation.animation.RotateDownPageTransformer;
+import com.testanimation.pageanimation.animation.CubeOutPageTransformer;
 import com.testanimation.pageanimation.animation.DepthPageTransformer;
+import com.testanimation.pageanimation.animation.FlipAndScalePageTransformer;
+import com.testanimation.pageanimation.animation.RotateUpPageTransformer;
 import com.testanimation.pageanimation.animation.RotationTransformer;
+import com.testanimation.pageanimation.animation.ScaleInOutPageTransformer;
+import com.testanimation.pageanimation.animation.SideFlipPageTransformer;
 import com.testanimation.pageanimation.animation.ZoomOutPageTransformer;
 
 
@@ -72,16 +79,25 @@ public class MainActivity extends ActionBarActivity {
                         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
                         break;
                     case 8:
-                        viewPager.setPageTransformer(true, null);
+                        viewPager.setPageTransformer(true, new FlipAndScalePageTransformer());
                         break;
                     case 9:
-                        viewPager.setPageTransformer(true, null);
+                        viewPager.setPageTransformer(true, new SideFlipPageTransformer());
                         break;
                     case 10:
-                        viewPager.setPageTransformer(true, null);
+                        viewPager.setPageTransformer(true, new CirclePageTransformer(160));
+                        break;
+                    case 11:
+                        viewPager.setPageTransformer(true, new RotateDownPageTransformer());
                         break;
                     case 12:
-                        viewPager.setPageTransformer(true, null);
+                        viewPager.setPageTransformer(true, new RotateUpPageTransformer());
+                        break;
+                    case 13:
+                        viewPager.setPageTransformer(true, new CubeOutPageTransformer());
+                        break;
+                    case 14:
+                        viewPager.setPageTransformer(true, new ScaleInOutPageTransformer());
                         break;
                     default:
                         viewPager.setPageTransformer(true, null);

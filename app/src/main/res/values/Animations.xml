@@ -10,11 +10,13 @@
         <item>RotationTransformer</item>
         <item>DepthPageTransformer</item>
         <item>ZoomOutPageTransformer</item>
-        <item>null</item>
-        <item>null</item>
-        <item>null</item>
-        <item>null</item>
-        <item>null</item>
+        <item>FlipAndScale</item>
+        <item>SideFlip</item>
+        <item>Circle</item>
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>CubeOut</item>
+        <item>ScaleInOut</item>
     </string-array>
 
 </resources>
